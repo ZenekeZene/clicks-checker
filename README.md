@@ -1,18 +1,17 @@
-# JS Library Template with Vite
-A template for creating JavaScript libraries using Vite as a development tool. This template is intended to be used as a starting point for new projects.
+# Clicks checker
 
 ## Installation
 
 ```
-npm install my-library
+npm install clicks-checker
 ```
 
 ## Usage
 
 ```
-import { doSomething } from 'my-library';
+import { createClicksChecker } from 'clicks-checker';
 
-doSomething();
+createClicksChecker();
 ```
 
 ## Development
