@@ -1,0 +1,34 @@
+{
+  "name": "clicks-checker",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "author": "zenekezene",
+  "keywords": [],
+  "scripts": {
+    "dev": "vite",
+    "build": "node lib-name-mapper.js && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "update-lib-name": "node lib-name-mapper.js"
+  },
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/clicks-checker.js",
+  "module": "./dist/clicks-checker.js",
+  "exports": {
+    ".": {
+      "import": "./dist/clicks-checker.js",
+      "require": "./dist/clicks-checker.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "vite": "^4.3.0",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
